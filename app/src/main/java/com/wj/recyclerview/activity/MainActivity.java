@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
   Button mainSimpleUser2;
   @InjectView(R.id.main_simple_user3)
   Button mainSimpleUser3;
+  @InjectView(R.id.main_swipe)
+  Button mainSwipe;
 
   private Context context;
 
@@ -34,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
     context = this;
   }
 
-  @OnClick({ R.id.main_simple_user1, R.id.main_simple_user2, R.id.main_simple_user3 })
+  @OnClick({
+      R.id.main_simple_user1, R.id.main_simple_user2, R.id.main_simple_user3, R.id.main_swipe
+  })
   public void onViewClicked(View view) {
     switch (view.getId()) {
       case R.id.main_simple_user1:
@@ -51,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
         //跳转到简单使用界面
         Intent intent3 = new Intent(context, SimpleUseThreeActivity.class);
         startActivity(intent3);
+        break;
+      case R.id.main_swipe:
+        //跳转到简单使用界面
+        Intent intent4 = new Intent(context, SwipeMenuListViewActivity.class);
+        startActivity(intent4);
         break;
     }
   }
