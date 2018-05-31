@@ -10,6 +10,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import butterknife.ButterKnife;
 import com.wj.recyclerview.R;
 import com.wj.recyclerview.adapter.SimpleUseAdapter;
 
@@ -34,6 +35,7 @@ public class SimpleUseTwoActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_use1);
+        ButterKnife.inject(this);
         initView();
 
     }
