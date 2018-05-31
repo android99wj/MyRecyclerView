@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
   Button mainSimpleUser1;
   @InjectView(R.id.main_simple_user2)
   Button mainSimpleUser2;
+  @InjectView(R.id.main_simple_user3)
+  Button mainSimpleUser3;
 
   private Context context;
 
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     context = this;
   }
 
-  @OnClick({ R.id.main_simple_user1, R.id.main_simple_user2 })
+  @OnClick({ R.id.main_simple_user1, R.id.main_simple_user2, R.id.main_simple_user3 })
   public void onViewClicked(View view) {
     switch (view.getId()) {
       case R.id.main_simple_user1:
@@ -44,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         //跳转到简单使用界面
         Intent intent2 = new Intent(context, SimpleUseTwoActivity.class);
         startActivity(intent2);
+        break;
+      case R.id.main_simple_user3:
+        //跳转到简单使用界面
+        Intent intent3 = new Intent(context, SimpleUseThreeActivity.class);
+        startActivity(intent3);
         break;
     }
   }

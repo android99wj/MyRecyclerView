@@ -17,4 +17,10 @@
       android:layout_height="40dp"
       android:text="简单使用2"
       />
+  <Button
+      android:id="@+id/main_simple_user3"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:text="简单使用3"
+      />
 </LinearLayout>
