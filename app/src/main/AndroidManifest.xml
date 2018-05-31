@@ -20,6 +20,7 @@
     <activity android:name=".activity.SimpleUseTwoActivity"/>
     <activity android:name=".activity.SimpleUseThreeActivity"/>
     <activity android:name=".activity.SwipeMenuListViewActivity"/>
+    <activity android:name=".activity.SwipeMenuListView2Activity"/>
   </application>
 
 </manifest>
